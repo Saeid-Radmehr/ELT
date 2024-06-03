@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+            #cog1, #cog3 {
+                background: transparent;
+                animation: 3500ms  linear 400ms infinite forwards  clockwise; 
+            }
+            #cog2 {
+                background: transparent;
+                animation: 3500ms linear 400ms  infinite reverse clockwise;
+            }
+            @keyframes clockwise {
+                from{
+                }
+                11% {
+                    transform: rotate(36deg);
+                }
+                22% {
+                    transform: rotate(72deg);
+                }
+                33%{
+                    transform: rotate(108deg);
+                }
+                44%{
+                    transform: rotate(144deg);
+                }
+                56%{
+                    transform: rotate(180deg);
+                }
+                57%{
+                    transform: rotate(216deg);
+                }
+                68%{
+                    transform: rotate(252deg);
+                }
+                78%{
+                    transform: rotate(288deg);
+                }
+                89%{
+                    transform: rotate(324deg);
+                }
+                to{
+                    transform: rotate(360deg);
+                }
+            }
+            body{
+                background-image:  linear-gradient(to bottom right, #fb7806, #1967e5);
+                background-repeat: no-repeat;
+                height: 100dvh;
+            }
+
+            .button-17 {
+              align-items: center;
+              appearance: none;
+              background-color: #fff;
+              color: white;
+              background-image:  linear-gradient(to bottom right, rgb(172, 141, 215),  rgb(235, 106, 99));
+              border-radius: 24px;
+              border-style: none;
+              box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+              box-sizing: border-box;
+              cursor: pointer;
+              display: inline-flex;
+              fill: currentcolor;
+              font-family: "Google Sans",Roboto,Arial,sans-serif;
+              font-size: 14px;
+              font-weight: 500;
+              height: 68px;
+              justify-content: center;
+              letter-spacing: .25px;
+              line-height: normal;
+              max-width: 100%;
+              overflow: visible;
+              padding: 2px 24px;
+              position: relative;
+              text-align: center;
+              text-transform: none;
+              transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+              user-select: none;
+              -webkit-user-select: none;
+              touch-action: manipulation;
+              width: auto;
+              will-change: transform,opacity;
+              z-index: 0;
+              font-size: larger;
+            }
+
+            .button-17:hover {
+              background: #F6F9FE;
+              color: #174ea6;
+            }
+
+            .button-17:active {
+              box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+              outline: none;
+            }
+
+            .button-17:focus {
+              outline: none;
+              border: 2px solid #4285f4;
+            }
+
+            .button-17:not(:disabled) {
+              box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+            }
+
+            .button-17:not(:disabled):hover {
+              box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+            }
+
+            .button-17:not(:disabled):focus {
+              box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+            }
+
+            .button-17:not(:disabled):active {
+              box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+            }
+
+            .button-17:disabled {
+              box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="animation_laptop" style="position: absolute; right:0; top:0; width:fit-content ">
+            <img src="laptop.png" style="position: relative; left:0; top:0; width:550px; height:550px;">
+            <img src="rain.gif" style="position: absolute; left:13%; top:23%; width: 74%; height: 46%;">
+        </div>
+        <div class="animation_cog" style="position: absolute; left:80px; top:50px; width:233px; height: 399px;">
+            <img id="cog1" src="Cogwheel.png" style="position: relative; width:155px; height:155px; border-radius: 100%;">
+            <img id="cog2" src="Cogwheel.png" style="position: relative; width:155px; height:155px; left: 78px; top:-40px; border-radius: 100%;">
+            <img id="cog3" src="Cogwheel.png" style="position: relative; width:155px; height:155px; top:-74px; border-radius: 100%;">
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <a class="button-17" style="width:400px; margin-top:140px; " role="button" target="_blank" href="https://chat.whatsapp.com/B9PzoNPumOz0fhZRujhTIi"><b>ELT Engineering & IT Whatsapp Group</b></a>
+            <a class="button-17" style="width:400px; margin-top: 45px;; " role="button" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScaq8UDLG7KbR6eQeeHMMlYFifj7MnHMqQqTfYi3Y3uc-uB5g/viewform?usp=sf_link"><b>Comment on me!</b></a>
+        </div>
+    </body>
+</html>
